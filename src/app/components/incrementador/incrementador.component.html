@@ -1,7 +1,7 @@
 <h3>{{leyenda}}</h3>
 
 <div class="input-group">
-    <input type="text" class="form-control" name="porcentajex" [(ngModel)]="porcentaje" placeholder="Porcentaje" aria-label="Porcentaje" aria-describedby="basic-addon2">
+    <input #textProgres type="number" class="form-control" (ngModelChange)="onChanges($event)" min="1" max="100" name="porcentaje" [(ngModel)]="porcentaje" placeholder="Porcentaje" aria-label="Porcentaje" aria-describedby="basic-addon2">
     <div class="input-group-append">
         <button class="btn btn-primary" (click)="cambiarvalor(-5)" type="button">
             <i class="mdi mdi-minus"></i>
