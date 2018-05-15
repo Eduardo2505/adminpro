@@ -12,7 +12,7 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './login/register/register.component';
 import { FormsModule } from '@angular/forms';
-import { GraficadonaComponent } from './components/graficadona/graficadona.component';
+
 
 
 
@@ -20,8 +20,7 @@ import { GraficadonaComponent } from './components/graficadona/graficadona.compo
   declarations: [
     AppComponent,
     LoginComponent,
-    RegisterComponent,
-    GraficadonaComponent
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
