@@ -15,6 +15,7 @@ import { GraficadonaComponent } from '../components/graficadona/graficadona.comp
 
 //modulos
 import { ChartsModule } from 'ng2-charts';
+import { AccoutSettingsComponent } from './accout-settings/accout-settings.component';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { ChartsModule } from 'ng2-charts';
      Graficas1Component,
      PagesComponent,
      IncrementadorComponent,
-     GraficadonaComponent
+     GraficadonaComponent,
+     AccoutSettingsComponent
  ],
  exports: [
     DashboardComponent,
