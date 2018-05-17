@@ -12,7 +12,8 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './login/register/register.component';
 import { FormsModule } from '@angular/forms';
-import { SidebarService } from './services/sidebar.service';
+import { ServiceModule } from './services/service.module';
+
 
 
 
@@ -27,9 +28,10 @@ import { SidebarService } from './services/sidebar.service';
     BrowserModule,
     APP_ROUTES,
     PagesModule,
-    FormsModule
+    FormsModule,
+    ServiceModule
   ],
-  providers: [SidebarService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
